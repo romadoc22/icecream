@@ -82,6 +82,8 @@
             sizes="(min-width: 1200px) 225px, (min-width: 768px) 155px, 100vw "
             src="./img/hero/hero-ice-cream-round-tablet.png"
             alt="imghero"
+            width="152"
+            height="152"
           />
 
           <div>
@@ -90,12 +92,11 @@
               incididunt ut labore et
             </p>
             <a href="#">
-              <svg class="hero__div1--svg" width="40" height="16" >
-              <use href="./img/svg/symbol-defs.svg#icon-arrow" ></use>
-            </svg>
+              <svg class="hero__div1--svg" width="40" height="16">
+                <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
+              </svg>
             </a>
           </div>
-          
         </div>
 
         <div class="hero__div2">
@@ -109,65 +110,40 @@
         </div>
 
         <div class="hero__img">
-          <img
-            srcset="
-              ./img/hero/hero-ice-cream-mobile.png     177w,
-              ./img/herohero-ice-cream-mobile@2x.png   354w,
-              ./img/hero/hero-ice-cream-tablet.png     268w,
-              ./img/hero/hero-ice-cream-tablet@2x.png  536w,
-              ./img/hero/hero-ice-cream-desktop.png    456w,
-              ./img/hero/hero-ice-cream-desktop@2x.png 912w"
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./img/hero/hero-ice-cream-desktop.png    1x,
+                ./img/hero/hero-ice-cream-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
 
-            sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw "
-            src="./img/hero/hero-ice-cream-tablet.png"
-            alt="ice" width="177" height="217" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero/hero-ice-cream-tablet.png    1x,
+                ./img/hero/hero-ice-cream-tablet@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./img/hero/hero-ice-cream-mobile.png   1x,
+                ./img/herohero-ice-cream-mobile@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./img/hero/hero-ice-cream-mobile.png" alt="ice" />
+          </picture>
         </div>
       </div>
     </section>
 
-    <!-- <section class="iceproducts">
-      <div class="container products">
-        <p class="products__pretitle">100% natural</p>
-        <h2 class="products__title">products</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <img src="./img/mob/prodmob1x.png" alt="">
-            <p class="products__undertitle">ice cream</p>
-            <p class="product__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
-              natural stabilizer</p>
-            <a href="#" class="product__link">
-              <svg width="40" height="16">
-                <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-            </a>
-
-          </li>
-          <li class="products__item">
-            <img src="./img/mob/prod2mob1x.jpg" alt="prod2">
-            <p class="products__undertitle">ice coffee</p>
-            <p class="product__description">Fragrant invigorating drink created from 100% natural ingredients without
-              the use of preservatives and flavor enhancers</p>
-            <a href="#" class="product__link">
-              <svg width="40" height="16">
-                <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="products__item">
-            <img src="./img/mob/prod3mob1x.jpg" alt="prod3">
-            <p class="products__undertitle">milkshakes</p>
-            <p class="product__description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
-              berries and other sweets of your choice</p>
-            <a href="#" class="product__link">
-              <svg width="40" height="16">
-                <use href="./img/svg/symbol-defs.svg#icon-arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </section> -->
+    
 
     <script src="./js/modal.js"></script>
     <script

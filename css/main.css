@@ -334,6 +334,8 @@ body {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
+  padding-bottom: 65px;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -344,11 +346,14 @@ body {
   }
 }
 
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+}
 @media screen and (min-width: 768px) {
   .hero__img {
     position: absolute;
-    width: 268px;
-    height: 329px;
     bottom: 0;
     right: 92px;
   }
@@ -356,9 +361,7 @@ body {
 @media screenand and (min-width: 1200px) {
   .hero__img {
     position: absolute;
-    width: 456px;
-    height: 560px;
-    bottom: 0;
+    top: 31px;
     right: 92px;
   }
 }
@@ -373,6 +376,7 @@ body {
   margin-bottom: 19px;
   margin-right: auto;
   gap: 12px;
+  margin-left: 16px;
 }
 @media screen and (min-width: 1200px) {
   .hero__div {
@@ -408,7 +412,6 @@ body {
         -ms-flex-align: normal;
             align-items: normal;
     margin-top: 14px;
-    margin-left: 32px;
     margin-bottom: 24px;
     margin-right: 0;
   }
@@ -488,6 +491,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 12px;
+    margin-left: 16px;
     gap: 32px;
   }
   .hero__div1--text {
