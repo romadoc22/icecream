@@ -1,73 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
-
-<body>
-  <header>
-    <div class="container header">
-      <a class="header__logo" href="./"><img src="./img/logo.png" alt="logo"></a>
-      <button type="button" class="header__button js-open-menu">
-        <svg width="32" height="32">
-          <use href="./img/svg/symbol-defs.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="menu js-menu-container">
-        <button type="button" class="menu__buttoncls js-close-menu">
+  <body>
+    <header>
+      <div class="container header">
+        <a class="header__logo" href="./"><img src="./img/logo.png" alt="logo" /></a>
+        <button type="button" class="header__button js-open-menu">
           <svg width="32" height="32">
-            <use href="./img/svg/symbol-defs.svg#icon-close"></use>
+            <use href="./img/svg/symbol-defs.svg#icon-burger"></use>
           </svg>
         </button>
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
-        </ul>
-        <button type="button" class="button">
-          <span class="button__text" >Buy now</span>
-          <svg width="12" height="12">
-            <use href="./img/svg/symbol-defs.svg#icon-vector"></use>
-          </svg>       
-        </button>
+        <div class="menu js-menu-container">
+          <button type="button" class="menu__buttoncls js-close-menu">
+            <svg width="32" height="32">
+              <use href="./img/svg/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
+            <li class="menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
+            <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
+            <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
+          </ul>
+          <button type="button" class="button">
+            <span class="button__text">Buy now</span>
+            <svg width="12" height="12">
+              <use href="./img/svg/symbol-defs.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Home</li>
+            <li class="nav-menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
+            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Our products</li>
+            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Contact</li>
+          </ul>
+        </div>
+        <button type="button" class="nav-menu__button">Buy now</button>
       </div>
-      <div class="nav-menu">
-        <ul class="nav-menu__list">
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Home</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Our products</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Contact</li>
-        </ul>
-      </div>
-      <button type="button" class="nav-menu__button">
-        Buy now
-        
-      </button>
-    </div>
-  </header>
+    </header>
 
-  <section class="icehero">
-    <div class="container hero">
-      <h1 class="hero__title">ice cream made with passion</h1>
-      <div class="hero__div">
-        <button type="button" class="hero__products">Products</button>
-        <a class="hero__link" href="#">How it’s made?</a>
-      </div>
-      <img src="./img/svg/mobileice.svg" alt="ice" width="177">
-    </div>
+    <section class="icehero">
+      <div class="container hero">
+        <h1 class="hero__title">
+          <span class="hero__title--1">ice cream</span>
+          <span class="hero__title--2"> made with</span>
+          <span class="hero__title--3">passion</span>
+        </h1>
 
-    <section class="iceproducts">
+        <div class="hero__div">
+          <button type="button" class="hero__products">Products</button>
+          <a class="hero__link" href="#">How it’s made?</a>
+        </div>
+
+        <div class="hero__div1">
+          <img
+            srcset="
+              ./img/hero/hero-ice-cream-round-tablet.png     152w,
+              ./img/hero/hero-ice-cream-round-tablet@2x.png  304w,
+              ./img/hero/hero-ice-cream-round-desktop.png    225w,
+              ./img/hero/hero-ice-cream-round-desktop@2x.png 450w
+            "
+            sizes="(min-width: 1200px) 225px, (min-width: 768px) 155px, 100vw "
+            src="./img/hero/hero-ice-cream-round-tablet.png"
+            alt="imghero"
+          />
+
+          <div>
+            <p class="hero__div1--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <a href="#">
+              <svg class="hero__div1--svg" width="40" height="16" >
+              <use href="./img/svg/symbol-defs.svg#icon-arrow" ></use>
+            </svg>
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="hero__div2">
+          <p class="hero__div2--text1">16</p>
+          <p class="hero__div2--text2">cafes</p>
+        </div>
+
+        <div class="hero__div3">
+          <p class="hero__div3--text1">23</p>
+          <p class="hero__div3--text2">food trucks</p>
+        </div>
+
+        <div class="hero__img">
+          <img
+            srcset="
+              ./img/hero/hero-ice-cream-mobile.png     177w,
+              ./img/herohero-ice-cream-mobile@2x.png   354w,
+              ./img/hero/hero-ice-cream-tablet.png     268w,
+              ./img/hero/hero-ice-cream-tablet@2x.png  536w,
+              ./img/hero/hero-ice-cream-desktop.png    456w,
+              ./img/hero/hero-ice-cream-desktop@2x.png 912w"
+              
+            sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw "
+            src="./img/hero/hero-ice-cream-tablet.png"
+            alt="ice"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="iceproducts">
       <div class="container products">
         <p class="products__pretitle">100% natural</p>
         <h2 class="products__title">products</h2>
@@ -109,17 +167,15 @@
         </ul>
       </div>
 
-    </section>
+    </section> -->
 
-
-  </section>
-
-  <script src="./js/modal.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script>
-
-</body>
-
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
 </html>
